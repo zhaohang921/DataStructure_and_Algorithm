@@ -22,6 +22,9 @@
     <Filter Include="栈">
       <UniqueIdentifier>{6a4c1733-1cf2-4134-ad12-c371da523a4e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="各种算法问题">
+      <UniqueIdentifier>{f27bcfe0-7ec7-4b3b-8eaa-2b270f5ff4ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ListNode.h">
@@ -40,6 +43,27 @@
     </ClCompile>
     <ClCompile Include="List.cpp">
       <Filter>链表</Filter>
+    </ClCompile>
+    <ClCompile Include="汉诺塔问题.cpp">
+      <Filter>各种算法问题</Filter>
+    </ClCompile>
+    <ClCompile Include="迷宫问题.cpp">
+      <Filter>各种算法问题</Filter>
+    </ClCompile>
+    <ClCompile Include="八皇后问题.cpp">
+      <Filter>各种算法问题</Filter>
+    </ClCompile>
+    <ClCompile Include="拉丁方阵问题_使用循环链表.cpp">
+      <Filter>各种算法问题</Filter>
+    </ClCompile>
+    <ClCompile Include="魔术师发牌问题_使用循环链表.cpp">
+      <Filter>各种算法问题</Filter>
+    </ClCompile>
+    <ClCompile Include="约瑟夫环问题__数列推导实现.cpp">
+      <Filter>各种算法问题</Filter>
+    </ClCompile>
+    <ClCompile Include="约瑟夫环问题_递归实现.cpp">
+      <Filter>各种算法问题</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

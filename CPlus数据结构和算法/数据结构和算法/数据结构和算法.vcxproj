@@ -150,6 +150,13 @@
     <ClCompile Include="List.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="八皇后问题.cpp" />
+    <ClCompile Include="拉丁方阵问题_使用循环链表.cpp" />
+    <ClCompile Include="约瑟夫环问题__数列推导实现.cpp" />
+    <ClCompile Include="约瑟夫环问题_递归实现.cpp" />
+    <ClCompile Include="迷宫问题.cpp" />
+    <ClCompile Include="汉诺塔问题.cpp" />
+    <ClCompile Include="魔术师发牌问题_使用循环链表.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
