@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="线性表">
+      <UniqueIdentifier>{46255ac8-2e1d-4812-895d-08907fb047b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="异常类">
+      <UniqueIdentifier>{67e2e8ca-f522-4267-a6e2-f9c7c652379c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="队列">
+      <UniqueIdentifier>{054cc348-a3fe-4043-9196-467b7ce94252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="跳表">
+      <UniqueIdentifier>{c4b736db-a6fd-4e8f-8934-e6efb59bfb81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="散列">
+      <UniqueIdentifier>{72713114-098d-4627-bd15-29dccf8bee79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="二叉树">
+      <UniqueIdentifier>{5199262a-70d3-4ce4-b173-8867bfacbf3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="优先级队列">
+      <UniqueIdentifier>{36415150-a624-4fd1-b46a-bd9dddda6fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="竞赛树">
+      <UniqueIdentifier>{59b0ab35-1781-4b52-99cb-b04391a5de9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="搜索树">
+      <UniqueIdentifier>{a8df2201-b072-4349-968b-62b3143a0cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="平衡搜索树">
+      <UniqueIdentifier>{91397753-7c05-4f5d-8e8a-66657aaf2407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="图">
+      <UniqueIdentifier>{1ddd78dc-a68d-4fb7-aa95-2beb4c7ee74c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="栈">
+      <UniqueIdentifier>{be232643-0ea4-414e-8e4b-a33db58560d1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LinearList.h">
+      <Filter>线性表</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayList.h">
+      <Filter>线性表</Filter>
+    </ClInclude>
+    <ClInclude Include="MyExceptions.h">
+      <Filter>异常类</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeLength1D.h">
+      <Filter>线性表</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryTree.h">
+      <Filter>二叉树</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryTreeNode.h">
+      <Filter>二叉树</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedBinaryTree.h">
+      <Filter>二叉树</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>队列</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArrayList.cpp">
+      <Filter>线性表</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedBinaryTree.cpp">
+      <Filter>二叉树</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
