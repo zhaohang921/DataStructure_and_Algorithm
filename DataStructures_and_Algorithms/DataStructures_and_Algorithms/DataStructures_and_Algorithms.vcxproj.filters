@@ -5,10 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -49,6 +45,10 @@
     <Filter Include="栈">
       <UniqueIdentifier>{be232643-0ea4-414e-8e4b-a33db58560d1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinearList.h">
@@ -76,7 +76,16 @@
       <Filter>队列</Filter>
     </ClInclude>
     <ClInclude Include="ArrayQueue.h">
-      <Filter>头文件</Filter>
+      <Filter>队列</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxPriorityQueue.h">
+      <Filter>优先级队列</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxHeap.h">
+      <Filter>优先级队列</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxHBLT.h">
+      <Filter>优先级队列</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -87,7 +96,19 @@
       <Filter>二叉树</Filter>
     </ClCompile>
     <ClCompile Include="ArrayQueue.cpp">
-      <Filter>源文件</Filter>
+      <Filter>队列</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxHeap.cpp">
+      <Filter>优先级队列</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxHBLT.cpp">
+      <Filter>优先级队列</Filter>
+    </ClCompile>
+    <ClCompile Include="堆排序.cpp">
+      <Filter>优先级队列</Filter>
+    </ClCompile>
+    <ClCompile Include="霍夫曼编码.cpp">
+      <Filter>优先级队列</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
