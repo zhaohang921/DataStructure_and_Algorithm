@@ -24,7 +24,7 @@ public:
 	void erase();
 	void preOrderOutput();//按前序输出二叉树节点
 	int height() const;  //确定二叉树高度
-private:
+protected:
 	BinaryTreeNode<E> *root;             //指向根的指针
 	int treeSize;                                    //二叉树的节点个数
 	static void(*visit)(BinaryTreeNode<E> *); //访问函数

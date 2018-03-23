@@ -131,7 +131,7 @@ void MaxHeap<T>::output(ostream & out) const
 	copy(heap + 1, heap + heapSize + 1, ostream_iterator<T>(cout, " "));
 }
 
-template<typeanme T>
+template<typename T>
 ostream & operator<<(ostream & out, const MaxHeap<T>& x)
 {
 	x.output(out);

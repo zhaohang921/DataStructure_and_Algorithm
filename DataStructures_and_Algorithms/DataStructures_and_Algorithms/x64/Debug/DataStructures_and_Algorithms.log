@@ -1,0 +1,23 @@
+﻿  LinkedBinaryTree.cpp
+  ArrayQueue.cpp
+d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arrayqueue.cpp(5): error C2955: “ArrayQueue”: 使用 类 模板 需要 模板 参数列表
+  d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arrayqueue.h(11): note: 参见“ArrayQueue”的声明
+d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arrayqueue.cpp(6): error C2509: “{ctor}”: 成员函数没有在“ArrayQueue”中声明
+  d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arrayqueue.h(11): note: 参见“ArrayQueue”的声明
+d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arrayqueue.cpp(10): error C2955: “ArrayQueue”: 使用 类 模板 需要 模板 参数列表
+  d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arrayqueue.h(11): note: 参见“ArrayQueue”的声明
+d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arrayqueue.cpp(11): error C2509: “{dtor}”: 成员函数没有在“ArrayQueue”中声明
+  d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arrayqueue.h(11): note: 参见“ArrayQueue”的声明
+  ArrayList.cpp
+d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arraylist.cpp(5): error C2955: “ArrayList”: 使用 类 模板 需要 模板 参数列表
+  d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arraylist.h(16): note: 参见“ArrayList”的声明
+d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arraylist.cpp(6): error C2509: “{ctor}”: 成员函数没有在“ArrayList”中声明
+  d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arraylist.h(16): note: 参见“ArrayList”的声明
+d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arraylist.cpp(10): error C2955: “ArrayList”: 使用 类 模板 需要 模板 参数列表
+  d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arraylist.h(16): note: 参见“ArrayList”的声明
+d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arraylist.cpp(11): error C2509: “{dtor}”: 成员函数没有在“ArrayList”中声明
+  d:\code\datastructure_and_algorithm\datastructures_and_algorithms\datastructures_and_algorithms\arraylist.h(16): note: 参见“ArrayList”的声明
+  正在生成代码...
+  正在编译...
+  MaxHBLT.cpp
+  正在生成代码...

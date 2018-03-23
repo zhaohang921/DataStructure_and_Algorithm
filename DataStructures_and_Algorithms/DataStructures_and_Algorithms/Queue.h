@@ -7,7 +7,7 @@ template<typename T>
 class Queue
 {
 public:
-	virtual ~queue() {}
+	virtual ~Queue() {}
 	virtual bool empty() const = 0;
 	// return true iff queue is empty
 	virtual int size() const = 0;

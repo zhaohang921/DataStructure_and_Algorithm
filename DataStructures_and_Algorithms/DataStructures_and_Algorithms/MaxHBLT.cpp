@@ -4,7 +4,7 @@
 template<typename T>
 bool MaxHBLT<T>::empty() const
 {
-	return treeSize == 0;;
+	return treeSize == 0;
 }
 
 template<typename T>

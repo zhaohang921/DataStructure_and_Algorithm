@@ -30,7 +30,7 @@ private:
 	T *heap;      //ÔªËØÊı×é
 };
 
-template<typeanme T>
+template<typename T>
 ostream& operator<<(ostream& out, const MaxHeap<T>& x);
 
 #endif

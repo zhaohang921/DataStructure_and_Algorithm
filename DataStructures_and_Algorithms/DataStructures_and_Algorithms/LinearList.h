@@ -8,7 +8,7 @@ template<typename T>
 class LinearList
 {
 public:
-	virtual ~linearList() {};
+	virtual ~LinearList() {};
 	virtual bool empty() const = 0;
 	// return true iff list is empty
 	virtual int size() const = 0;

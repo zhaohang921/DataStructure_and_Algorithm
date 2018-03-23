@@ -17,9 +17,9 @@ class ArrayList : public LinearList<T>
 {
 public:
 	// constructor, copy constructor and destructor
-	arrayList(int initialCapacity = 10);
-	arrayList(const arrayList<T>&);
-	~arrayList() { delete[] element; }
+	ArrayList(int initialCapacity = 10);
+	ArrayList(const ArrayList<T>&);
+	~ArrayList() { delete[] element; }
 
 	// ADT methods
 	bool empty() const { return listSize == 0; }
