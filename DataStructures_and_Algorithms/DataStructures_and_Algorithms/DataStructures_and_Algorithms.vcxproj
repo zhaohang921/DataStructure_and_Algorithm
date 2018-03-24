@@ -145,8 +145,10 @@
   <ItemGroup>
     <ClInclude Include="ArrayList.h" />
     <ClInclude Include="ArrayQueue.h" />
+    <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="BinaryTreeNode.h" />
+    <ClInclude Include="BsTree.h" />
     <ClInclude Include="ChangeLength1D.h" />
     <ClInclude Include="LinearList.h" />
     <ClInclude Include="LinkedBinaryTree.h" />
@@ -159,6 +161,8 @@
   <ItemGroup>
     <ClCompile Include="ArrayList.cpp" />
     <ClCompile Include="ArrayQueue.cpp" />
+    <ClCompile Include="BinarySearchTree.cpp" />
+    <ClCompile Include="Dictionary.h" />
     <ClCompile Include="LinkedBinaryTree.cpp" />
     <ClCompile Include="MaxHBLT.cpp" />
     <ClCompile Include="MaxHeap.cpp" />

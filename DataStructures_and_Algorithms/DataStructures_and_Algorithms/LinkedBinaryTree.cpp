@@ -84,6 +84,13 @@ void LinkedBinaryTree<E>::preOrderOutput()
 }
 
 template<typename E>
+void LinkedBinaryTree<E>::inOrderOutput()
+{
+	 inOrder(output); 
+	 cout << endl; 
+}
+
+template<typename E>
 int LinkedBinaryTree<E>::height() const
 {
 	return height(root);  //调用静态私有成员函数	static int height(BinaryTreeNode<E> *t);//返回根为*t的树的高度

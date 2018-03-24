@@ -23,6 +23,7 @@ public:
 	virtual void levelOrder(void(*theVisit) (BinaryTreeNode<E>*)) override;
 	void erase();
 	void preOrderOutput();//按前序输出二叉树节点
+	void inOrderOutput();
 	int height() const;  //确定二叉树高度
 protected:
 	BinaryTreeNode<E> *root;             //指向根的指针

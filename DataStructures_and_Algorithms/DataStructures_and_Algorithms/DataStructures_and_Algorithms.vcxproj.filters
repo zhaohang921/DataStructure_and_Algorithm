@@ -18,12 +18,6 @@
     <Filter Include="队列">
       <UniqueIdentifier>{054cc348-a3fe-4043-9196-467b7ce94252}</UniqueIdentifier>
     </Filter>
-    <Filter Include="跳表">
-      <UniqueIdentifier>{c4b736db-a6fd-4e8f-8934-e6efb59bfb81}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="散列">
-      <UniqueIdentifier>{72713114-098d-4627-bd15-29dccf8bee79}</UniqueIdentifier>
-    </Filter>
     <Filter Include="二叉树">
       <UniqueIdentifier>{5199262a-70d3-4ce4-b173-8867bfacbf3d}</UniqueIdentifier>
     </Filter>
@@ -48,6 +42,9 @@
     <Filter Include="头文件">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="跳表和散列">
+      <UniqueIdentifier>{c4b736db-a6fd-4e8f-8934-e6efb59bfb81}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +84,12 @@
     <ClInclude Include="MaxHBLT.h">
       <Filter>优先级队列</Filter>
     </ClInclude>
+    <ClInclude Include="BsTree.h">
+      <Filter>搜索树</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearchTree.h">
+      <Filter>搜索树</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArrayList.cpp">
@@ -109,6 +112,12 @@
     </ClCompile>
     <ClCompile Include="霍夫曼编码.cpp">
       <Filter>优先级队列</Filter>
+    </ClCompile>
+    <ClCompile Include="Dictionary.h">
+      <Filter>跳表和散列</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearchTree.cpp">
+      <Filter>搜索树</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
