@@ -21,5 +21,11 @@
     <ClCompile Include="001二维数组中的查找.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="003从尾到头打印链表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="004重建二叉树.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
