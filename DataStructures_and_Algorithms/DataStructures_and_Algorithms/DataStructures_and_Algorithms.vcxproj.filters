@@ -90,6 +90,9 @@
     <ClInclude Include="BinarySearchTree.h">
       <Filter>搜索树</Filter>
     </ClInclude>
+    <ClInclude Include="DuplicateBinarySearchTree.h">
+      <Filter>搜索树</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArrayList.cpp">

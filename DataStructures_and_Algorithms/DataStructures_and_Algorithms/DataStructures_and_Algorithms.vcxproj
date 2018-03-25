@@ -150,6 +150,7 @@
     <ClInclude Include="BinaryTreeNode.h" />
     <ClInclude Include="BsTree.h" />
     <ClInclude Include="ChangeLength1D.h" />
+    <ClInclude Include="DuplicateBinarySearchTree.h" />
     <ClInclude Include="LinearList.h" />
     <ClInclude Include="LinkedBinaryTree.h" />
     <ClInclude Include="MaxHBLT.h" />

@@ -147,6 +147,8 @@
     <ClCompile Include="001二维数组中的查找.cpp" />
     <ClCompile Include="003从尾到头打印链表.cpp" />
     <ClCompile Include="004重建二叉树.cpp" />
+    <ClCompile Include="005用两个栈实现队列.cpp" />
+    <ClCompile Include="006旋转数组的最小数字.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
