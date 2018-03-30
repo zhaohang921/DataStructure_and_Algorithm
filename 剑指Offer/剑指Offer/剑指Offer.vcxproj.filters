@@ -33,5 +33,17 @@
     <ClCompile Include="006旋转数组的最小数字.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="007斐波那契数列.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="008跳台阶.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="009变态跳台阶.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="010矩形覆盖.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

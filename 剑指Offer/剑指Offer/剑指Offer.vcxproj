@@ -149,6 +149,10 @@
     <ClCompile Include="004重建二叉树.cpp" />
     <ClCompile Include="005用两个栈实现队列.cpp" />
     <ClCompile Include="006旋转数组的最小数字.cpp" />
+    <ClCompile Include="007斐波那契数列.cpp" />
+    <ClCompile Include="008跳台阶.cpp" />
+    <ClCompile Include="009变态跳台阶.cpp" />
+    <ClCompile Include="010矩形覆盖.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

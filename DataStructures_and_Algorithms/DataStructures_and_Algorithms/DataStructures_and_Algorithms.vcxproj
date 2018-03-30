@@ -146,6 +146,7 @@
     <ClInclude Include="ArrayList.h" />
     <ClInclude Include="ArrayQueue.h" />
     <ClInclude Include="BinarySearchTree.h" />
+    <ClInclude Include="BinarySearchTreeWithVisit.h" />
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="BinaryTreeNode.h" />
     <ClInclude Include="BsTree.h" />
