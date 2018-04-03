@@ -10,7 +10,7 @@ template<typename T>
 class RBTNode 
 {
 public:
-    RBTNode()=default; //默认构造函数
+    RBTNode(){}; //默认构造函数
     RBTNode(T value,RBTColor c,RBTNode *p,RBTNode *l,RBTNode *r):key(value),color(c),parent(p),left(l),right(r){}
 public:
     T key;            //节点关键字

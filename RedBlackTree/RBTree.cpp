@@ -265,7 +265,7 @@ void RBTree<T>::insertFixUp(RBTNode<T>* &root, RBTNode<T>* node) //插入修正�
 {
     RBTNode<T> *parent=nullptr; //父节点
     RBTNode<T> *gparent=nullptr; //祖父节点
-    while(parent=rb_parent(node) && rb_is_red(parent)) //需要插入修正的情况下，父节点一定是红色
+    while((parent=rb_parent(node)) && rb_is_red(parent)) //需要插入修正的情况下，父节点一定是红色
     {
         gparent=rb_parent(parent);
         if(parent==gparent->left) //若父节点是祖父节点的左孩子
