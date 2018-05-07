@@ -3,7 +3,8 @@
 // 如果是则输出Yes,否则输出No。假设输入的数组的任意两个数字都互不相同。
 
 //思路：后序遍历的顺序是，左右根
-
+#include<vector>
+using namespace std;
 class Solution {
 public:
     bool VerifySquenceOfBST(vector<int> sequence){
