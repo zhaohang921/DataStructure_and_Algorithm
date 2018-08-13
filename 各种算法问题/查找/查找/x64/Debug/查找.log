@@ -1,3 +1,0 @@
-﻿  main.cpp
-d:\code\各种算法问题\查找\查找\main.cpp(32): warning C4806: “!=”: 不安全操作: 从类型“bool”提升到类型“int”的值不能等于给定的常量
-  查找.vcxproj -> D:\Code\各种算法问题\查找\x64\Debug\查找.exe

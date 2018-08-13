@@ -29,12 +29,11 @@ struct TreeNode{
 class Solution{
 public:
     void Mirror(TreeNode *pRoot){
-        if(pRoot==nullptr)
+        if(!pRoot)
             return;
         // TreeNode* tmp=pRoot->left;
         // pRoot->left=pRoot->right;
         // pRoot->right=tmp;
-        // tmp=nullptr;
         swap(pRoot->left,pRoot->right);
         Mirror(pRoot->left);
         Mirror(pRoot->right);

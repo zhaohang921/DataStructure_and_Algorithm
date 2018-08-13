@@ -4,7 +4,7 @@
 
 
 
-//思路：深度优先遍历，回溯法
+//思路：深度优先遍历，回溯法， 前序遍历
 
 #include<vector>
 using namespace std;
@@ -16,23 +16,21 @@ struct TreeNode {
 			val(x), left(nullptr), right(nullptr) {
 	}
 };
+
 class Solution {
 public:
     vector<vector<int> > FindPath(TreeNode* root,int expectNumber) {
-        if(root==nullptr)
-            return buffer;
+        if(!root) return result;
         tmp.push_back(root->val);
-        if(expectNumber==root->val && root->left==nullptr && root->right==nullptr)
-            buffer.push_back(tmp);
-        FindPath(root->left,expectNumber-root->val);
-        FindPath(root->right,expectNumber-root->val);
-        if(tmp.size()!=0)
-            tmp.pop_back();
-        return buffer;
+        if(expectNumber==root->val && !root->left && !root->right)
+            result.push_back(tmp);
+        FindPath(root->left, expectNumber - root->val);
+        FindPath(root->right, expectNumber - root->val);
+        tmp.pop_back();
+        return result;
     }
-public:
-    vector<vector<int> > buffer;
+private:
+    vector<vector<int>> result;
     vector<int> tmp;
-    
 };
 

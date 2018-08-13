@@ -38,5 +38,23 @@ public:
 	}
 };
 
-
+class Solution {
+public:
+    TreeNode* Convert(TreeNode* pRootOfTree) {
+        if (!pRootOfTree) return nullptr;
+        TreeNode *pre = nullptr;
+        help(pRootOfTree, pre);
+        TreeNode *result = pRootOfTree;
+        while (result->left) result = result->left;
+        return result;
+    }
+    void help(TreeNode* cur, TreeNode* &pre) {
+        if (!cur) return;
+        help(cur->left, pre);
+        cur->left = pre;
+        if (pre) pre->right = cur;
+        pre = cur;
+        help(cur->right, pre);
+    }
+};
 

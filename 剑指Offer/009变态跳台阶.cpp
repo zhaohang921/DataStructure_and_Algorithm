@@ -36,3 +36,14 @@ public:
         return  1<<--number;
     }
 };
+
+class Solution {
+public:
+    int jumpFloorII(int number) {
+        int result = 1;
+        while (--number) {
+            result *= 2;
+        }
+        return result;
+    }
+};

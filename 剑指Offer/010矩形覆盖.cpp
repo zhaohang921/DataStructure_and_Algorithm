@@ -9,8 +9,8 @@ public:
         {
             int f = 0, g = 1;
             while(number--) {
-            g += f; //g是上一步骤的g和上一步骤的f之和
-            f = g - f;//f就是上一步骤的g
+                g += f; //g是上一步骤的g和上一步骤的f之和
+                f = g - f;//f就是上一步骤的g
             }
             return g;
         }
