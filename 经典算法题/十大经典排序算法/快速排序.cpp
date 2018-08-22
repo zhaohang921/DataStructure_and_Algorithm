@@ -21,25 +21,17 @@
 using namespace std;
 
 
-void QuickSort(vector<int>& a,int lhs,int rhs){
-    int i=lhs,j=rhs,temp=a[lhs];  //temp就是基准数
-    if(lhs>rhs)
-        return;
-    while(i!=j){
-        while(a[j]>=temp && i<j) //先从右边开始找比temp小的
-            --j;
-        while(a[i]<=temp && i<j) //再从左边找比temp大的
-            ++i;
-        if(i<j)
-            swap(a[i],a[j]); //将找到的两个树交换
+void QuickSort(vector<int>& nums, int l, int r) {
+    int i = l, j = r, v = nums[l];
+    if (l > r) return;
+    while (i < j) {
+        while (nums[j] >= v && i < j) --j;
+        while (nums[i] <= v && i < j) ++i;
+        if (i < j) swap(nums[i], nums[j]);
     }
-    swap(a[lhs],a[i]);
-    // for(auto i : a){
-    //     cout<<i<<' ';
-    // }
-    // cout<<endl;
-    QuickSort(a,lhs,i-1);
-    QuickSort(a,i+1,rhs);
+    swap(nums[l], nums[i]);
+    QuickSort(nums, l, i - 1);
+    QuickSort(nums, i + 1, r);
 }
 
 int main(){
