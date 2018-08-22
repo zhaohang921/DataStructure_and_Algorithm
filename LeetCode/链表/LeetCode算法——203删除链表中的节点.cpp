@@ -16,22 +16,18 @@ struct ListNode {
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
-        if (head == nullptr){
-            return nullptr;
+        ListNode *dummyNode = new ListNode(-1);
+        dummyNode->next = head;
+        ListNode *cur = dummyNode;
+        while (cur && cur->next) {
+            if (cur->next->val == val) {
+                ListNode *delNode = cur->next;
+                cur->next = delNode->next;
+                delete delNode;
+                delNode = nullptr;
+            } else 
+                cur = cur->next;
         }
-        ListNode *tou = new ListNode(-1);
-        tou->next = head;
-        ListNode *pre = tou;
-        while (pre->next){
-            if (pre->next->val == val){
-                ListNode *temp = pre->next;
-                pre->next = temp->next;
-                delete temp;
-                temp = nullptr;
-            } else {
-                pre = pre->next;
-            }
-        }
-        return tou->next;
+        return dummyNode->next;
     }
 };
