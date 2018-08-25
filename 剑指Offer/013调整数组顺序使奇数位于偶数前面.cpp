@@ -23,3 +23,21 @@ public:
         array=odd;     
     }
 };
+
+class Solution {
+public:
+    void reOrderArray(vector<int> &array) {
+        vector<int> temp;
+        for (auto ite = array.begin(); ite != array.end();) {
+            if ((*ite % 2) == 0) {
+                temp.push_back(*ite);
+                array.erase(ite);
+            } else {
+                ++ite;
+            }
+        }
+        for (auto ite = temp.begin(); ite != temp.end(); ++ite) {
+            array.push_back(*ite);
+        }
+    }
+};

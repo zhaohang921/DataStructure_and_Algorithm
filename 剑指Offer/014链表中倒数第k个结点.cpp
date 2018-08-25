@@ -37,3 +37,22 @@ public:
         return a;            
     }
 };
+
+    ListNode* FindKthToTail(ListNode* pListHead, unsigned int k) {
+        if (!pListHead) return nullptr;
+        ListNode *_1 = pListHead;
+        ListNode *_2 = pListHead;
+        for (int i = 0; i < k; ++i) {
+            if (_1 != nullptr) {
+                _1 = _1->next;
+            } else {
+                return nullptr;
+            }
+        }
+        while (_1) {
+            _1 = _1->next;
+            _2 = _2->next;
+        }
+        return _2;
+    }
+};

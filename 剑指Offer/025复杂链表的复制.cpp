@@ -91,43 +91,44 @@ public:
 
 #include<unorderd_map>
 //思路三：哈希表法
-class Solution{
+class Solution {
 public:
     RandomListNode* Clone(RandomListNode* pHead){
-        if(pHead==nullptr)
-            return nullptr;
-        //定义一个无序的允许重复关键字的map，使用的是哈希技术
-        unordered_multimap<RandomListNode* ,RandomListNode* > table;
-        //new一个新的头节点
+        if(!pHead) return nullptr;
+        //定义一个哈希表
+        unordered_multimap<RandomListNode*,RandomListNode*> table;
+        // 开辟一个头结点
         RandomListNode* pClonedHead=new RandomListNode(pHead->label);
         pClonedHead->next=nullptr;
         pClonedHead->random=nullptr;
-
+        // 将头结点放入map中
         table.insert(make_pair(pHead,pClonedHead));
-
+        //设置操作指针
         RandomListNode* pNode=pHead->next;
         RandomListNode* pClonedNode=pClonedHead;
-
-        while(pNode!=nullptr)
-        {
+        // 第一遍先将简单链表复制一下
+        while(pNode!=nullptr){
+            // 不断开辟pNode的拷贝结点
             RandomListNode* pClonedTail=new RandomListNode(pNode->label);
             pClonedTail->next=nullptr;
             pClonedTail->random=nullptr;
-
+            //连接新节点，更新当前节点
             pClonedNode->next=pClonedTail;
             pClonedNode=pClonedTail;
-
+            //将对应关系  插入到哈希表中
             table.insert(make_pair(pNode,pClonedTail));
-
+            //向后移动操作节点
             pNode=pNode->next;
         }
+        //需从头开始设置random节点，设置操作指针
         pNode=pHead;
         pClonedNode=pClonedHead;
-        while(pNode!=nullptr)
-        {
-            if(pNode->random!=nullptr)
-                //table里面存放的元素的first是原来链表的节点，second是新的链表中对应的节点
-                pClonedNode->random=table.find(pNode->random)->second;
+        // 根据map中保存的数据，找到对应的节点
+        while(pNode!=NULL){
+            if(pNode->random!=NULL) {
+                pClonedNode->random=table.find(pNode->random)->second;//找到对应节点，更新复制链表
+            }
+            //向后移动操作节点
             pNode=pNode->next;
             pClonedNode=pClonedNode->next;
         }

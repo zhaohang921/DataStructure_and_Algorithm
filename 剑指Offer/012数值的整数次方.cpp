@@ -6,15 +6,23 @@
 class Solution {
 public:
     double Power(double base, int exponent) {
-        if(exponent==0 && base!=0)
-            return 1;
-        int number=abs(exponent);
-        double result=1;
-        while(number>0)
-        {
+        if (exponent == 0 && base != 0) return 1;
+        int number = abs(exponent);
+        double result = 1;
+        while (number--) {
             result *= base;
-            --number;
         }
-        return exponent>0 ? result : 1/result;
+        return exponent > 0 ? result : 1 / result;
+    }
+};
+
+class Solution {
+public:
+    double Power(double base, int exponent) {
+        if (exponent == 0) return 1;
+        if (base == 0) return 0;
+        if (exponent == 1) return base;
+        if (exponent == -1) return 1 / base;
+        return Power(base, exponent / 2) * Power(base, exponent / 2) * Power(base, exponent % 2);
     }
 };

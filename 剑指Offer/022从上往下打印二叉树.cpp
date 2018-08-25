@@ -36,3 +36,22 @@ public:
         return result;
     }
 };
+
+class Solution {
+public:
+    vector<int> PrintFromTopToBottom(TreeNode* root) {
+        vector<int> result;
+        if (!root) return result;
+        queue<TreeNode*> q;
+        q.push(root);
+        TreeNode *t;
+        while (!q.empty()) {
+            t = q.front();
+            q.pop();
+            result.push_back(t->val);
+            if (t->left) q.push(t->left);
+            if (t->right) q.push(t->right);
+        }
+        return result;
+    }
+};

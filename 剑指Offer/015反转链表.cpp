@@ -19,24 +19,21 @@ public:
 // 思路：使用辅助节点把链表掉头
 class Solution {
 public:
-    ListNode* ReverseList(ListNode* pHead) {        
-        if(pHead==NULL) return NULL;//注意程序鲁棒性         
-        ListNode* pNode=pHead;//当前指针
-        ListNode* pReverseHead=NULL;//新链表的头指针
-        ListNode* pPrev=NULL;//当前指针的前一个结点         
-        while(pNode!=NULL){//当前结点不为空时才执行
-            ListNode* pNext=pNode->next;//链断开之前一定要保存断开位置后边的结点
-             
-            if(pNext==NULL)//当pNext为空时，说明当前结点为尾节点
-                pReverseHead=pNode;
-  
-            pNode->next=pPrev;//指针反转
-            pPrev=pNode;
-            pNode=pNext;
+    ListNode* ReverseList(ListNode* pHead) {
+        if (!pHead) return nullptr;
+        ListNode *result = nullptr;
+        ListNode *cur = pHead;
+        ListNode *pre = nullptr;
+        while (cur) {
+            ListNode *temp = cur->next;
+            if (!temp) result = cur; // 尾节点时才把值赋给result
+            cur->next = pre; // 指针反转
+            pre = cur;
+            cur = temp;
         }
-        return pReverseHead;
+        return result;
     }
-}
+};
 
 // 思路二：递归
 class Solution {

@@ -74,3 +74,17 @@ public:
         return result;
     }
 };
+
+//思路三：公式，想不出来
+class Solution {
+public:
+    int NumberOf1Between1AndN_Solution(int n)
+    {
+        if(n<=0) return 0;
+        int result = 0;
+        for (long long m = 1; m <= n; m *= 10) {
+            result += (n / m + 8) / 10 * m + (n / m % 10 == 1) * (n % m + 1);
+        }
+        return result;
+    }
+};

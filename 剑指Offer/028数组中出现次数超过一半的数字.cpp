@@ -42,3 +42,29 @@ public:
             return 0;
     }
 };
+
+class Solution {
+public:
+    int MoreThanHalfNum_Solution(vector<int> numbers) {
+        if (numbers.empty()) return 0;
+        int size = numbers.size();
+        int num = numbers[0];
+        int count = 1;
+        for (int i = 1; i < size; ++i) {
+            if (numbers[i] != num) {
+                --count;
+            } else {
+                ++count;
+            }
+            if (count == 0) {
+                num = numbers[i];
+                count = 1;
+            }
+        }
+        count = 0;
+        for (int i = 0; i < size; ++i) {
+            if (num == numbers[i]) ++count;
+        }
+        return count * 2 > size ? num : 0;
+    }
+};

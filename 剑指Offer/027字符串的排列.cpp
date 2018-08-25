@@ -67,3 +67,23 @@ public:
         }
     }
 };
+
+class Solution {
+public:
+    vector<string> Permutation(string str) {
+        vector<string> result;
+        if (str.empty()) return result;
+        Permutation(result, str, 0);
+        sort(result.begin(), result.end());
+        return result;
+    }
+    void Permutation(vector<string>& result, string str, int begin) {
+        if (begin == str.size() - 1) result.push_back(str);
+        for (int i = begin; i < str.size(); ++i) {
+            if (i != begin && str[i] == str[begin]) continue;
+            swap(str[i], str[begin]);
+            Permutation(result, str, begin + 1);
+            swap(str[i], str[begin]);
+        }
+    }
+};
