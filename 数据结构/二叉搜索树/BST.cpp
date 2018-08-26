@@ -119,6 +119,7 @@ private:
         node->left = removeMin(node->left);
         return node;
     }
+    // 返回的是新的代替node的节点
     Node* remove(Node* node, Key key) {
         if (node == nullptr)
             return nullptr;
@@ -132,12 +133,14 @@ private:
             if (node->left == nullptr) {
                 Node *rightNode = node->right;
                 delete node;
+                node = nullptr;
                 --count;
                 return rightNode;
             }
             if (node->right == nullptr) {
-                Node *leftNode = node->right;
+                Node *leftNode = node->left;
                 delete node;
+                node = nullptr;
                 --count;
                 return leftNode;
             } 
