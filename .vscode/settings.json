@@ -55,6 +55,7 @@
         "xstddef": "cpp",
         "xtr1common": "cpp",
         "unordered_set": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "cassert": "cpp"
     }
 }
